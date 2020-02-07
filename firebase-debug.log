@@ -1,0 +1,439 @@
+[debug] [2020-02-07T07:13:53.097Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T07:13:53.099Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy --only hosting:quickspeechv2
+[debug] [2020-02-07T07:13:53.099Z] CLI Version:   7.12.1
+[debug] [2020-02-07T07:13:53.099Z] Platform:      darwin
+[debug] [2020-02-07T07:13:53.099Z] Node Version:  v13.7.0
+[debug] [2020-02-07T07:13:53.100Z] Time:          Fri Feb 07 2020 12:43:53 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T07:13:53.100Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T07:13:53.100Z] 
+[debug] [2020-02-07T07:13:53.110Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T07:13:53.110Z] > authorizing via signed-in user
+[debug] [2020-02-07T07:13:53.110Z] [iam] checking project quickspeech-iiit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T07:13:53.111Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/quickspeech-iiit:testIamPermissions  
+
+[debug] [2020-02-07T07:13:56.144Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-07T07:13:56.147Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/quickspeech-iiit  
+ 
+[debug] [2020-02-07T07:13:57.811Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'quickspeech-iiit'...
+[info] 
+[info] i  deploying hosting
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/quickspeech-iiit/overview
+[debug] [2020-02-07T07:13:58.970Z] TypeError: Cannot read property 'deploys' of undefined
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:84:36
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-02-07T09:50:04.689Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:50:04.691Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T09:50:04.691Z] CLI Version:   7.12.1
+[debug] [2020-02-07T09:50:04.691Z] Platform:      darwin
+[debug] [2020-02-07T09:50:04.691Z] Node Version:  v13.7.0
+[debug] [2020-02-07T09:50:04.693Z] Time:          Fri Feb 07 2020 15:20:04 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T09:50:04.693Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:50:04.693Z] 
+[debug] [2020-02-07T09:50:04.703Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T09:50:04.704Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-02-07T09:50:20.680Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T09:50:20.680Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T09:50:39.868Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T09:51:55.360Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/commands/login.js:8:12)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at loadCommand (/usr/local/lib/node_modules/firebase-tools/lib/commands/index.js:5:19)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/commands/index.js:73:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-02-07T09:52:16.744Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:52:16.746Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T09:52:16.746Z] CLI Version:   7.12.1
+[debug] [2020-02-07T09:52:16.746Z] Platform:      darwin
+[debug] [2020-02-07T09:52:16.746Z] Node Version:  v13.7.0
+[debug] [2020-02-07T09:52:16.747Z] Time:          Fri Feb 07 2020 15:22:16 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T09:52:16.747Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:52:16.747Z] 
+[debug] [2020-02-07T09:52:16.757Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T09:52:16.757Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-02-07T09:52:28.734Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T09:52:28.734Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T09:52:47.875Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T09:54:03.098Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/commands/login.js:8:12)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at loadCommand (/usr/local/lib/node_modules/firebase-tools/lib/commands/index.js:5:19)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/commands/index.js:73:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-02-07T09:55:44.983Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:55:44.984Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T09:55:44.985Z] CLI Version:   7.12.1
+[debug] [2020-02-07T09:55:44.985Z] Platform:      darwin
+[debug] [2020-02-07T09:55:44.985Z] Node Version:  v13.7.0
+[debug] [2020-02-07T09:55:44.986Z] Time:          Fri Feb 07 2020 15:25:44 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T09:55:44.986Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:55:44.986Z] 
+[debug] [2020-02-07T09:55:44.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T09:55:44.995Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-02-07T09:55:52.276Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T09:55:52.277Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T09:56:28.146Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T09:57:24.440Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:57:24.442Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T09:57:24.442Z] CLI Version:   7.12.1
+[debug] [2020-02-07T09:57:24.442Z] Platform:      darwin
+[debug] [2020-02-07T09:57:24.442Z] Node Version:  v13.7.0
+[debug] [2020-02-07T09:57:24.443Z] Time:          Fri Feb 07 2020 15:27:24 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T09:57:24.443Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:57:24.443Z] 
+[debug] [2020-02-07T09:57:24.453Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T09:57:24.453Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-02-07T09:57:28.012Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T09:57:28.012Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T09:58:35.341Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:58:35.343Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T09:58:35.343Z] CLI Version:   7.12.1
+[debug] [2020-02-07T09:58:35.343Z] Platform:      darwin
+[debug] [2020-02-07T09:58:35.343Z] Node Version:  v13.7.0
+[debug] [2020-02-07T09:58:35.344Z] Time:          Fri Feb 07 2020 15:28:35 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T09:58:35.344Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:58:35.344Z] 
+[debug] [2020-02-07T09:58:35.353Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T09:58:35.354Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-02-07T09:58:38.089Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T09:58:38.090Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T09:59:53.344Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T09:59:59.871Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:59:59.872Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T09:59:59.872Z] CLI Version:   7.12.1
+[debug] [2020-02-07T09:59:59.872Z] Platform:      darwin
+[debug] [2020-02-07T09:59:59.872Z] Node Version:  v13.7.0
+[debug] [2020-02-07T09:59:59.873Z] Time:          Fri Feb 07 2020 15:29:59 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T09:59:59.873Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T09:59:59.873Z] 
+[debug] [2020-02-07T09:59:59.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T09:59:59.882Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[debug] [2020-02-07T10:00:08.051Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:00:08.052Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T10:00:08.052Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:00:08.052Z] Platform:      darwin
+[debug] [2020-02-07T10:00:08.053Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:00:08.053Z] Time:          Fri Feb 07 2020 15:30:08 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:00:08.054Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:00:08.054Z] 
+[debug] [2020-02-07T10:00:08.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:00:08.060Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[debug] [2020-02-07T10:00:13.544Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:00:13.545Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T10:00:13.545Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:00:13.545Z] Platform:      darwin
+[debug] [2020-02-07T10:00:13.545Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:00:13.546Z] Time:          Fri Feb 07 2020 15:30:13 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:00:13.547Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:00:13.547Z] 
+[debug] [2020-02-07T10:00:13.553Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:00:13.553Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[debug] [2020-02-07T10:00:18.947Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:00:18.948Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-07T10:00:18.948Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:00:18.948Z] Platform:      darwin
+[debug] [2020-02-07T10:00:18.948Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:00:18.949Z] Time:          Fri Feb 07 2020 15:30:18 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:00:18.949Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:00:18.950Z] 
+[debug] [2020-02-07T10:00:18.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:00:18.956Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aniketsharma/Projects/temp/rakshakcollector
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-02-07T10:00:26.041Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:00:26.042Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:00:33.155Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T10:01:08.255Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/commands/login.js:8:12)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at loadCommand (/usr/local/lib/node_modules/firebase-tools/lib/commands/index.js:5:19)
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/commands/index.js:73:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-02-07T10:03:18.206Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:03:18.208Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-07T10:03:18.208Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:03:18.208Z] Platform:      darwin
+[debug] [2020-02-07T10:03:18.208Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:03:18.210Z] Time:          Fri Feb 07 2020 15:33:18 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:03:18.210Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:03:18.210Z] 
+[debug] [2020-02-07T10:03:18.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:03:18.223Z] > authorizing via signed-in user
+[debug] [2020-02-07T10:03:18.224Z] [iam] checking project quickspeech-iiit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T10:03:18.225Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:03:18.225Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:03:59.304Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:03:59.305Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-07T10:03:59.305Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:03:59.305Z] Platform:      darwin
+[debug] [2020-02-07T10:03:59.305Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:03:59.306Z] Time:          Fri Feb 07 2020 15:33:59 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:03:59.306Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:03:59.306Z] 
+[debug] [2020-02-07T10:03:59.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:03:59.313Z] > authorizing via signed-in user
+[debug] [2020-02-07T10:03:59.313Z] [iam] checking project quickspeech-iiit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T10:03:59.315Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:03:59.315Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:04:06.452Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T10:04:06.454Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:04:06.454Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:04:52.236Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:04:52.238Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-07T10:04:52.238Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:04:52.238Z] Platform:      darwin
+[debug] [2020-02-07T10:04:52.238Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:04:52.238Z] Time:          Fri Feb 07 2020 15:34:52 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:04:52.239Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:04:52.239Z] 
+[debug] [2020-02-07T10:04:52.245Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:04:52.246Z] > authorizing via signed-in user
+[debug] [2020-02-07T10:04:52.246Z] [iam] checking project quickspeech-iiit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T10:04:52.247Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:04:52.247Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:05:20.778Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:05:20.779Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-07T10:05:20.779Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:05:20.779Z] Platform:      darwin
+[debug] [2020-02-07T10:05:20.779Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:05:20.780Z] Time:          Fri Feb 07 2020 15:35:20 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:05:20.780Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:05:20.780Z] 
+[debug] [2020-02-07T10:05:20.787Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:05:20.787Z] > authorizing via signed-in user
+[debug] [2020-02-07T10:05:20.787Z] [iam] checking project quickspeech-iiit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T10:05:20.789Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:05:20.789Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:09:08.454Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:09:08.456Z] Command:       /usr/local/Cellar/node/13.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-07T10:09:08.456Z] CLI Version:   7.12.1
+[debug] [2020-02-07T10:09:08.456Z] Platform:      darwin
+[debug] [2020-02-07T10:09:08.456Z] Node Version:  v13.7.0
+[debug] [2020-02-07T10:09:08.457Z] Time:          Fri Feb 07 2020 15:39:08 GMT+0530 (India Standard Time)
+[debug] [2020-02-07T10:09:08.457Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T10:09:08.457Z] 
+[debug] [2020-02-07T10:09:08.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T10:09:08.470Z] > authorizing via signed-in user
+[debug] [2020-02-07T10:09:08.470Z] [iam] checking project quickspeech-iiit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T10:09:08.472Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:09:08.472Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-07T10:09:16.094Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-02-07T10:09:16.095Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-07T10:09:16.095Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
