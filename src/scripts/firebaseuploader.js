@@ -14,14 +14,15 @@ function Uploader() {
   var FireBaseUploader = new Uploader();
   
   FireBaseUploader.service = "firebase";
-  FireBaseUploader.config = {
-    apiKey: "AIzaSyCtSbOzi4GNcVoQTf5NftbNiDhUrNzO0Ow",
-    authDomain: "quickspeech-iiit.firebaseapp.com",
-    databaseURL: "https://quickspeech-iiit.firebaseio.com",
-    projectId: "quickspeech-iiit",
-    storageBucket: "quickspeech-iiit.appspot.com",
-    messagingSenderId: "84141281869",
-    appId: "1:84141281869:web:ad181233d8a896e7"
+  FireBaseUploader.config =  {
+    apiKey: "AIzaSyAadTRY8xc67MBmFM7IgRkID3mmWGvZAdQ",
+    authDomain: "quickspeech-v2.firebaseapp.com",
+    databaseURL: "https://quickspeech-v2.firebaseio.com",
+    projectId: "quickspeech-v2",
+    storageBucket: "quickspeech-v2.appspot.com",
+    messagingSenderId: "266281944320",
+    appId: "1:266281944320:web:1b5b3e86392efc59b2dfe5",
+    measurementId: "G-S2FC27NW9T"
   };
   
   firebase.initializeApp(FireBaseUploader.config);
