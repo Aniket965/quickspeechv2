@@ -86,7 +86,7 @@
     </div>
 
       <div class="heading center-child">
-        <h1 class="grad-text">QuickSpeech v2 </h1>
+        <h1 class="grad-text">QuickSpeech2</h1>
         <p>How many words can you say in 3 min in different emotions</p>
       </div>
       <div class="menu center-child">
