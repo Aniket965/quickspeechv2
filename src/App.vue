@@ -167,7 +167,7 @@ user-select: none; /* Non-prefixed version, currently
     justify-self: right;
 }
 .big-text {
-    font-size: 4rem;
+    font-size: 3.4rem;
     text-align: center;
     font-weight: bold;
   font-family: 'Poppins', sans-serif;
