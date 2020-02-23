@@ -3,7 +3,7 @@
 
 <template>
   <div class="game page">
-    <div v-if="showModal" @close="showModal = false">
+    <div v-if="showModal" @close="showModal = false;">
       <transition name="modal">
         <div class="modal-mask">
           <div class="modal-wrapper">
@@ -25,7 +25,7 @@
                   Score: {{score}}
                   <div
                     class="modal-default-button btn game-btn bluegrad noselect"
-                    v-on:click="showModal = false"
+                    v-on:click="close"
                   >CLOSE</div>
                 </slot>
               </div>
@@ -76,6 +76,7 @@ function progress(time, currentTime) {
 function gametime(time, currentTime, that, ispause = false) {
   if (currentTime > time) {
     that.showModal = true;
+    that.gameOver = true;
     return;
   }
 
@@ -94,12 +95,18 @@ export default {
       gameStarted: false,
       score: 0,
       recorder: null,
-      showModal: false
+      showModal: false,
+      gameOver:false,
     };
   },
 
   methods: {
+    close: function() {
+     this.showModal = false;
+     window.location.href = "/";
+    },
     onRecordClicked: function() {
+      this.gameOver = false;
       this.recorder.start(3000);
       progress(3200, 0);
       let progressbar = document.getElementById("progressbar");
@@ -108,7 +115,7 @@ export default {
         this.recorder.stop();
         let progressbar = document.getElementById("progressbar");
         progressbar.style.width = `100vw`;
-        this.score += 1;
+        if(!this.gameOver) this.score += 1;
         if (localStorage.getItem("score")) {
           if (this.score > localStorage.getItem("score")) {
             localStorage.setItem("score", this.score);
@@ -184,8 +191,8 @@ export default {
               emoji.innerHTML = tospeak[2];
               k.style.opacity = 1;
               e.style.opacity = 1;
-                       k.style.webkitBackfaceVisibility ="visible";
-          e.style.webkitBackfaceVisibility ="visible";
+              k.style.webkitBackfaceVisibility ="visible";
+              e.style.webkitBackfaceVisibility ="visible";
               emoji.style.opacity = 1;
             },
             300,

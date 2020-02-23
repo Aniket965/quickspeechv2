@@ -214,7 +214,6 @@ user-select: none; /* Non-prefixed version, currently
     bottom: 0px;
     transition:  3s width;
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-
 }
 /* 
     ##Device = Laptops, Desktops
