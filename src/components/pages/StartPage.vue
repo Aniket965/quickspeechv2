@@ -101,12 +101,12 @@
         </div>
         <div class="social-share">
           <div class="share circle twitter bluegrad">
-            <a class="nodeco" href="http://twitter.com/share?text=I have played quickspeech, play and help in collecting dataset&url=http://quickspeech-in.web.app&hashtags=quickspeech,womenesafety,datasetcollection" target="_blank">
+            <a class="nodeco" href="http://twitter.com/share?text=I have played quickspeech, play and help in collecting dataset&url=https://quickspeech-v2.web.app/&hashtags=quickspeechv2,womenesafety,datasetcollection" target="_blank">
             <img src="../../assets/TwitterLogo.png" class="noselect" />
             </a>
           </div>
           <div class="center-child share circle Facebook bluegrad">
-              <a class="nodeco" href="            https://www.facebook.com/sharer/sharer.php?u=http://quickspeech-in.web.app?share=1" target="_blank">
+              <a class="nodeco" href="            https://www.facebook.com/sharer/sharer.php?u=https://quickspeech-v2.web.app/?share=1" target="_blank">
               <img src="../../assets/facebook.png" class="noselect"/>
             </a>
           </div>

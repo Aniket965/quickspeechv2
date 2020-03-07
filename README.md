@@ -1,6 +1,9 @@
 # Quickspeech V2
 ![](artwork/logo_q2.png)
-> 2nd version of [quickspeech](https://quickspeech-in.web.app/).
+
+![Build and Deploy](https://github.com/Aniket965/quickspeechv2/workflows/Build%20and%20Deploy/badge.svg)
+
+> 2nd version of older [quickspeech](https://quickspeech-v2.web.app/).
 
 ## Project setup
 ```

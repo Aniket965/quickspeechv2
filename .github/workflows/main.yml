@@ -13,12 +13,6 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
-      - name: create configuration file
-        uses: w9jds/firebase-action@master
-        with:
-          args: setup:web --json > ./src/scripts/firebase-config.json
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       - name: Build
         run: npm run build
       - name: Archive Production Artifact

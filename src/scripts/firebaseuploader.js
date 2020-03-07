@@ -1,5 +1,4 @@
 // Depends upon Uploader from storage.js
-import firebaseConfig from './firebase-config.json'; 
 
 function Uploader() {
     this.service = "default";
@@ -14,7 +13,17 @@ function Uploader() {
   var FireBaseUploader = new Uploader();
   
   FireBaseUploader.service = "firebase";
-  FireBaseUploader.config =  firebaseConfig['result'];
+  FireBaseUploader.config =  {
+    "projectId": "quickspeech-v2",
+    "appId": "1:266281944320:web:1b5b3e86392efc59b2dfe5",
+    "databaseURL": "https://quickspeech-v2.firebaseio.com",
+    "storageBucket": "quickspeech-v2.appspot.com",
+    "locationId": "us-central",
+    "apiKey": "AIzaSyAadTRY8xc67MBmFM7IgRkID3mmWGvZAdQ",
+    "authDomain": "quickspeech-v2.firebaseapp.com",
+    "messagingSenderId": "266281944320",
+    "measurementId": "G-S2FC27NW9T"
+  };
   
   firebase.initializeApp(FireBaseUploader.config);
   FireBaseUploader.ref = firebase.storage().ref();
