@@ -17,6 +17,8 @@ jobs:
         uses: w9jds/firebase-action@master
         with:
           args: setup:web --json > ./src/scripts/firebase-config.json
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       - name: Build
         run: npm run build
       - name: Archive Production Artifact
@@ -24,8 +26,6 @@ jobs:
         with:
           name: dist
           path: dist
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
   deploy:
     name: Deploy
     needs: build
