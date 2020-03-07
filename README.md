@@ -1,4 +1,6 @@
-# rakshakcollector
+# Quickspeech V2
+![](artwork/logo_q2.png)
+> 2nd version of [quickspeech](https://quickspeech-in.web.app/).
 
 ## Project setup
 ```

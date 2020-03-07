@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "createfirebaseconf": "firebase setup:web --json > ./src/scripts/firebase-config.json"
   },
   "dependencies": {
     "core-js": "^2.6.5",
